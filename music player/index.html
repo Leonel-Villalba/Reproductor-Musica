@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+    <script src="https://kit.fontawesome.com/29b0527e24.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Player -->
+    <main class="player">
+            <!-- title -->
+            <h1 class="title" id="title">Elegir canción</h1>
+
+            <!-- cover -->
+            <img src="./img/1.jpg" alt="" class="cover" id="cover">
+
+            <!-- Audio HTML Media element-->
+            <audio src="" id="audio"></audio>
+
+            <!-- progress bar -->
+            <div id="progress-container" class="progress-container">
+                <section id="progress" class="progress"></section>
+            </div>
+
+            <!-- controls -->
+            <section class="controls">
+                <button class="prev">
+                    <i id="prev" class="fas fa-backward"></i>
+                </button>
+                <button class="play">
+                    <i id="play" class="fas fa-play"></i>
+                </button>
+                <button class="next">
+                    <i id="next" class="fas fa-forward"></i>
+                </button>
+            </section>
+
+            <!-- Son list -->
+            <ul class="songs" id="songs">
+                <!-- <li><a href="#">Song 1</a></li>
+                <li><a class="active" href="#">Song 2</a></li>
+                <li><a href="#">Song 3</a></li> -->
+            </ul>
+
+    </main>
+    
+    <video muted autoplay loop>
+        <source src="./video/synthwave1.mp4" type="video/mp4">
+    </video>
+    <div class="capa"></div>
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>>
